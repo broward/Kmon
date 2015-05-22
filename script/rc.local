@@ -1,0 +1,6 @@
+# run Kafka Monitor from local directory
+cd /opt/kmon/target
+java -cp Kmon-jar-with-dependencies.jar com.nodemy.kafka.Kmon &
+
+# alternate target
+# java -cp Kmon-jar-with-dependencies.jar com.nodemy.kafka.Kmon configFile=config.properties &
