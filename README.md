@@ -1,3 +1,9 @@
+JMX 2.0 was released prior to the Sun/Oracle merger as the OpenDMK open source project ( https://opendmk.java.net/ ). Originally, JMX evolved around management of a single java JVM and JMX 2.0 was designed for true enterprise management of hundreds of java virtual machines across multiple servers.
+
+Kafka is a natural candidate for JMX 2.0 and in this project I use two components, OpenDMK and Jolokia (https://jolokia.org/ ) to produce a simple Kafka monitor. There's about 250 lines of java code and some html/json code for the UI.
+
+The end result is very fast and easy to modify, unlike most of the current Kafka monitors which require Play/Akka/Scala/SBT knowledge and substantially more code.
+
 ﻿Startup commands using default config (kafka-1,kafka-2,kafka-3)
 
     - cd /opt/kmon/target
